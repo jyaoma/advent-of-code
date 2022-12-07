@@ -1,0 +1,14 @@
+No long strings, so you can't reference the string in its entirety at the end
+Maybe it can be broken up, maybe it can be inferred somehow
+The number of each character might go up and down in a regular pattern? But this pattern would be super complex and would need some kind of crazy calculation to infer
+Breaking up the string sounds like it could be feasible, but the sheer volume we're dealing with could make it impractical
+How could we infer it?
+
+The tally of each letter seems to double (+/- a few) each time. It can give us a close estimate to what the answer is, but it's highly unlikely we could get an exact number from it.
+Consequently, the resulting answer also seems to double (+/- a few) each time. We won't be able to deduce the exact answer from this information.
+
+So, we definitely need some representation of the string as we go, but (again) we can't store the entire string.
+Storing the string divided by each of the initial pairs won't work, the strings will still be too big
+We'd need to find a smarter way of dividing up the string as we go, and we might need to do some crazy logic at the end to compile the result.
+Dumb question, would using an array work?? Using an array is slower, actually.
+What about nested arrays?
